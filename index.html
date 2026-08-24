@@ -3,46 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="کمگارد - سیستم امنیتی هوشمند با تشخیص حضور انسان">
-    <meta name="keywords" content="دوربین امنیتی، سیستم امنیتی، کمگارد">
-    <title>کمگارد - سیستم امنیتی هوشمند</title>
+    <meta name="description" content="معرفی محصولات کمگارد، قابلیت‌های تشخیص ورود انسان، تماس، پیامک، ارسال تصویر و اتصال به تجهیزات امنیتی.">
+    <meta name="keywords" content="کمگارد، تشخیص ورود، سیستم امنیتی، هشدار، NVR، XVR">
+    <meta property="og:title" content="کمگارد | راهکار تشخیص و اطلاع‌رسانی ورود">
+    <meta property="og:description" content="معرفی محصولات کمگارد و قابلیت‌های تشخیص ورود انسان با تماس، پیامک و ارسال تصویر.">
+    <title>کمگارد | راهکار تشخیص و اطلاع‌رسانی ورود</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
+    <!-- Header / Navigation -->
+    <header class="header">
         <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <h1>کمگارد</h1>
-                    <p class="tagline">امنیت هوشمند</p>
+            <div class="header-inner">
+                <div class="logo-section">
+                    <h1 class="logo">CAMGUARD</h1>
+                    <p class="logo-subtitle">کمگارد</p>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#hero">خانه</a></li>
-                    <li><a href="#about">درباره</a></li>
-                    <li><a href="#products">محصولات</a></li>
-                    <li><a href="#features">ویژگی‌ها</a></li>
-                    <li><a href="#comparison">مقایسه</a></li>
-                    <li><a href="#faq">پرسش‌ها</a></li>
-                    <li><a href="#contact">تماس</a></li>
-                </ul>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">خانه</a></li>
+                        <li><a href="#about" class="nav-link">معرفی</a></li>
+                        <li><a href="#capabilities" class="nav-link">قابلیت‌ها</a></li>
+                        <li><a href="#products" class="nav-link">محصولات</a></li>
+                        <li><a href="#comparison" class="nav-link">مقایسه</a></li>
+                        <li><a href="#faq" class="nav-link">سؤالات متداول</a></li>
+                        <li><a href="#contact" class="nav-link">تماس</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="btn btn-primary" onclick="document.getElementById('contactSection').scrollIntoView({behavior: 'smooth'})">درخواست خرید</button>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h2>سیستم امنیتی هوشمند با تشخیص حضور انسان</h2>
-                <p>کمگارد برای حفاظت و نظارت بر ملک و اموال شما</p>
+                <h2 class="hero-title">وقتی ورود مهم است، اطلاع پیدا کنید</h2>
+                <p class="hero-subtitle">کمگارد یک راهکار امنیتی برای تشخیص ورود انسان و اطلاع‌رسانی از طریق تماس، پیامک و تصویر است.</p>
                 <div class="hero-buttons">
-                    <a href="#products" class="btn btn-primary">مشاهده محصولات</a>
-                    <a href="#contact" class="btn btn-secondary">درخواست اطلاعات</a>
+                    <button class="btn btn-primary" onclick="document.getElementById('productsSection').scrollIntoView({behavior: 'smooth'})">مشاهده محصولات</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('contactSection').scrollIntoView({behavior: 'smooth'})">درخواست خرید</button>
+                </div>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <span class="feature-icon">📞</span>
+                        <span>تماس هشدار</span>
+                    </div>
+                    <div class="hero-feature">
+                        <span class="feature-icon">💬</span>
+                        <span>پیامک هشدار</span>
+                    </div>
+                    <div class="hero-feature">
+                        <span class="feature-icon">📷</span>
+                        <span>ارسال تصویر</span>
+                    </div>
+                    <div class="hero-feature">
+                        <span class="feature-icon">🔌</span>
+                        <span>اتصال NVR/XVR</span>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="icon-placeholder">📷</div>
+            <div class="hero-visual">
+                <div class="device-mockup">
+                    <div class="device-screen">
+                        <div class="screen-header">کمگارد</div>
+                        <div class="screen-content">
+                            <div class="detection-icon">✓</div>
+                            <div class="detection-text">تشخیص ورود</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -50,177 +89,205 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>درباره کمگارد</h2>
-            <p>کمگارد سیستم امنیتی است که حضور انسان را تشخیص می‌دهد و اطلاع فوری ارسال می‌کند. این سیستم امکان مشاهده زنده، تماس و پیامک هشدار را فراهم می‌کند.</p>
-            <div class="about-features">
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>تشخیص حضور انسان</h3>
-                    <p>شناسایی لحظه‌ای حضور انسان</p>
+            <div class="section-header">
+                <h2>کمگارد چیست؟</h2>
+            </div>
+            <p class="section-description">
+                کمگارد برای زمانی طراحی شده است که تشخیص ورود و اطلاع‌رسانی سریع اهمیت دارد. سیستم می‌تواند هنگام تشخیص انسان، از طریق تماس تلفنی و پیامک اطلاع‌رسانی کند و تصویر فرد تشخیص داده‌شده را ارسال کند.
+            </p>
+            <div class="about-cards">
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h3>تشخیص</h3>
+                    <p>شناسایی ورود انسان</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
+                <div class="card">
+                    <div class="card-icon">2</div>
                     <h3>اطلاع‌رسانی</h3>
-                    <p>تماس و پیامک هشدار برای واکنش سریع</p>
+                    <p>تماس و پیامک فوری</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔍</div>
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h3>تصویر</h3>
+                    <p>ارسال تصویر فرد</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">4</div>
+                    <h3>ثبت</h3>
+                    <p>ذخیره تصویر و زمان</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section id="capabilities" class="capabilities">
+        <div class="container">
+            <div class="section-header">
+                <h2>قابلیت‌های اصلی</h2>
+            </div>
+            <div class="capabilities-grid">
+                <div class="capability-item">
+                    <h3>تشخیص ورود انسان</h3>
+                    <p>سیستم قادر به شناسایی و تشخیص ورود انسان است.</p>
+                </div>
+                <div class="capability-item">
+                    <h3>تماس تلفنی</h3>
+                    <p>اطلاع‌رسانی از طریق تماس تلفنی هنگام تشخیص.</p>
+                </div>
+                <div class="capability-item">
+                    <h3>پیامک</h3>
+                    <p>ارسال پیامک هشدار برای اطلاع فوری.</p>
+                </div>
+                <div class="capability-item">
                     <h3>ارسال تصویر</h3>
-                    <p>ارسال تصویر فرد شناسایی‌شده</p>
+                    <p>ارسال خودکار تصویر فرد شناسایی‌شده.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📺</div>
-                    <h3>مشاهده زنده</h3>
-                    <p>نمایش مستقیم بدون نیاز به NVR</p>
+                <div class="capability-item">
+                    <h3>ثبت تصویر</h3>
+                    <p>ثبت تصویر همراه با زمان رویداد.</p>
                 </div>
+                <div class="capability-item">
+                    <h3>اتصال به NVR/XVR</h3>
+                    <p>امکان اتصال به تجهیزات ضبط تصویر.</p>
+                </div>
+                <div class="capability-item">
+                    <h3>حسگرهای سیمی و بی‌سیم</h3>
+                    <p>پشتیبانی از حسگرهای مختلف در مدل‌های پشتیبانی‌شده.</p>
+                </div>
+                <div class="capability-item">
+                    <h3>آژیر</h3>
+                    <p>امکان اتصال به آژیر برای اطلاع‌رسانی محلی.</p>
+                </div>
+                <div class="capability-item">
+                    <h3>نرم‌افزار اختصاصی</h3>
+                    <p>دارای نرم‌افزار اختصاصی برای انتقال و مشاهده تصاویر.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>نحوه عملکرد</h2>
+            </div>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="step-number">۱</div>
+                    <h4>تشخیص</h4>
+                    <p>بررسی و تشخیص ورود انسان</p>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <div class="step-number">۲</div>
+                    <h4>اطلاع‌رسانی</h4>
+                    <p>ارسال تماس و پیامک</p>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <div class="step-number">۳</div>
+                    <h4>ارسال تصویر</h4>
+                    <p>تصویر فرد شنا��ایی‌شده</p>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <div class="step-number">۴</div>
+                    <h4>ثبت و ذخیره</h4>
+                    <p>ثبت در صورت اتصال NVR</p>
+                </div>
+            </div>
+            <div class="workflow-note">
+                <p><strong>نکته:</strong> برای مشاهده زنده، الزاماً به NVR نیاز نیست؛ اما برای ضبط و نگهداری تصاویر، NVR و هارد مورد نیاز است.</p>
             </div>
         </div>
     </section>
 
     <!-- Products Section -->
     <section id="products" class="products">
-        <div class="container">
-            <h2>محصولات کمگارد</h2>
-            
+        <div id="productsSection" class="container">
+            <div class="section-header">
+                <h2>محصولات کمگارد</h2>
+            </div>
             <div class="products-grid">
-                <!-- Camguard -->
+                <!-- Product 1: Camguard -->
                 <div class="product-card">
-                    <div class="product-header camguard">
+                    <div class="product-header">
                         <h3>Camguard</h3>
+                        <p class="product-subtitle">نسخه پایه‌ای</p>
                     </div>
                     <div class="product-body">
-                        <p class="product-description">نسخه پایه</p>
                         <ul class="product-features">
-                            <li>✓ تشخیص حضور انسان</li>
-                            <li>✓ تماس و پیامک هشدار</li>
+                            <li>✓ تشخیص ورود انسان</li>
+                            <li>✓ تماس تلفنی هشدار</li>
+                            <li>✓ پیامک هشدار</li>
                             <li>✓ ارسال تصویر فرد</li>
                             <li>✓ مشاهده زنده مستقیم</li>
                         </ul>
-                        <button class="btn btn-primary order-btn" onclick="openOrderForm('Camguard')">درخواست</button>
+                        <div class="product-price">
+                            <p>برای اطلاع از قیمت تماس بگیرید</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="openRequestForm('Camguard')">درخواست اطلاعات</button>
                     </div>
                 </div>
 
-                <!-- Camguard Pro -->
+                <!-- Product 2: Camguard Pro -->
                 <div class="product-card featured">
-                    <div class="badge">محبوب</div>
-                    <div class="product-header pro">
+                    <div class="product-badge">محبوب‌ترین</div>
+                    <div class="product-header">
                         <h3>Camguard Pro</h3>
+                        <p class="product-subtitle">نسخه حرفه‌ای</p>
                     </div>
                     <div class="product-body">
-                        <p class="product-description">نسخه حرفه‌ای</p>
                         <ul class="product-features">
                             <li>✓ تمام ویژگی‌های Camguard</li>
-                            <li>✓ اتصال حسگرهای سیمی و بی‌سیم</li>
-                            <li>✓ پشتیبانی تا ۱۰ حسگر بی‌سیم</li>
+                            <li>✓ حسگرهای سیمی و بی‌سیم</li>
+                            <li>✓ تا ۱۰ حسگر بی‌سیم</li>
                             <li>✓ اتصال آژیر</li>
-                            <li>✓ سازگاری با NVR و XVR</li>
+                            <li>✓ سازگاری با NVR/XVR</li>
                         </ul>
-                        <button class="btn btn-primary order-btn" onclick="openOrderForm('Camguard Pro')">درخواست</button>
+                        <div class="product-price">
+                            <p>برای اطلاع از قیمت تماس بگیرید</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="openRequestForm('Camguard Pro')">درخواست اطلاعات</button>
                     </div>
                 </div>
 
-                <!-- Camguard Pro Plus -->
-                <div class="product-card">
-                    <div class="product-header pro-plus">
+                <!-- Product 3: Camguard Pro Plus -->
+                <div class="product-card premium">
+                    <div class="product-header">
                         <h3>Camguard Pro Plus</h3>
-                        <p class="price">۱۸٬۲۸۶٬۰۰۰ تومان</p>
+                        <p class="product-subtitle">نسخه پریمیوم</p>
                     </div>
                     <div class="product-body">
-                        <p class="product-description">نسخه پریمیوم</p>
                         <ul class="product-features">
-                            <li>✓ تمام ویژگی‌های Camguard Pro</li>
-                            <li>✓ ضبط تصاویر با NVR و هارد</li>
+                            <li>✓ تمام ویژگی‌های Pro</li>
+                            <li>✓ ضبط تصاویر با NVR/XVR</li>
                             <li>✓ نگهداری طولانی‌مدت تصاویر</li>
+                            <li>✓ ارسال تصویر و ثبت</li>
                         </ul>
-                        <button class="btn btn-primary order-btn" onclick="openOrderForm('Camguard Pro Plus')">درخواست</button>
+                        <div class="product-price">
+                            <p class="price-amount">۱۸٬۲۸۶٬۰۰۰ تومان</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="openRequestForm('Camguard Pro Plus')">درخواست اطلاعات</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2>ویژگی‌های کمگارد</h2>
-            <div class="features-list">
-                <div class="feature-item">
-                    <h3>تشخیص حضور انسان</h3>
-                    <p>شناسایی فوری حضور انسان در محدوده دید</p>
-                </div>
-                <div class="feature-item">
-                    <h3>تماس و پیامک هشدار</h3>
-                    <p>دریافت فوری تماس و پیامک هنگام تشخیص</p>
-                </div>
-                <div class="feature-item">
-                    <h3>ارسال تصویر</h3>
-                    <p>ارسال خودکار تصویر فرد شناسایی‌شده</p>
-                </div>
-                <div class="feature-item">
-                    <h3>مشاهده زنده بدون NVR</h3>
-                    <p>نیاز به NVR نیست برای مشاهده مستقیم</p>
-                </div>
-                <div class="feature-item">
-                    <h3>اتصال حسگرها</h3>
-                    <p>سازگاری با حسگرهای سیمی و بی‌سیم (در مدل‌های پشتیبانی‌شده)</p>
-                </div>
-                <div class="feature-item">
-                    <h3>تا ۱۰ حسگر بی‌سیم</h3>
-                    <p>اتصال حداکثر ۱۰ حسگر بی‌سیم در مدل‌های مربوطه</p>
-                </div>
-                <div class="feature-item">
-                    <h3>اتصال آژیر</h3>
-                    <p>امکان اتصال آژیر برای هشدار صوتی</p>
-                </div>
-                <div class="feature-item">
-                    <h3>ضبط تصاویر</h3>
-                    <p>ضبط تصاویر بر روی NVR، XVR و هارد (در مدل Pro Plus)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section id="how-it-works" class="how-it-works">
-        <div class="container">
-            <h2>نحوه کار</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>تشخیص</h3>
-                    <p>حضور انسان شناسایی می‌شود</p>
-                </div>
-                <div class="step-arrow">→</div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>هشدار</h3>
-                    <p>تماس و پیامک ارسال می‌شود</p>
-                </div>
-                <div class="step-arrow">→</div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>تصویر</h3>
-                    <p>تصویر فرد ارسال می‌شود</p>
-                </div>
-                <div class="step-arrow">→</div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>ثبت</h3>
-                    <p>اطلاعات ذخیره می‌شود</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Comparison Table -->
+    <!-- Comparison Section -->
     <section id="comparison" class="comparison">
         <div class="container">
-            <h2>مقایسه محصولات</h2>
+            <div class="section-header">
+                <h2>مقایسه محصولات</h2>
+            </div>
             <div class="table-wrapper">
                 <table class="comparison-table">
                     <thead>
                         <tr>
-                            <th>ویژگی</th>
+                            <th>قابلیت</th>
                             <th>Camguard</th>
                             <th>Camguard Pro</th>
                             <th>Camguard Pro Plus</th>
@@ -228,58 +295,64 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>تشخیص حضور انسان</td>
-                            <td class="check">✓</td>
-                            <td class="check">✓</td>
-                            <td class="check">✓</td>
+                            <td>تشخیص ورود انسان</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
                         </tr>
                         <tr>
-                            <td>تماس و پیامک هشدار</td>
-                            <td class="check">✓</td>
-                            <td class="check">✓</td>
-                            <td class="check">✓</td>
+                            <td>تماس تلفنی</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                        </tr>
+                        <tr>
+                            <td>پیامک</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
                         </tr>
                         <tr>
                             <td>ارسال تصویر</td>
-                            <td class="check">✓</td>
-                            <td class="check">✓</td>
-                            <td class="check">✓</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
                         </tr>
                         <tr>
-                            <td>مشاهده زنده مستقیم</td>
-                            <td class="check">✓</td>
-                            <td class="check">✓</td>
-                            <td class="check">✓</td>
+                            <td>ثبت تصویر و زمان</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
                         </tr>
                         <tr>
                             <td>حسگرهای سیمی و بی‌سیم</td>
-                            <td class="cross">✗</td>
-                            <td class="check">✓</td>
-                            <td class="check">✓</td>
+                            <td class="no">✗</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
                         </tr>
                         <tr>
                             <td>حداکثر حسگرهای بی‌سیم</td>
-                            <td>-</td>
+                            <td class="dash">—</td>
                             <td>۱۰</td>
                             <td>۱۰</td>
                         </tr>
                         <tr>
                             <td>اتصال آژیر</td>
-                            <td class="cross">✗</td>
-                            <td class="check">✓</td>
-                            <td class="check">✓</td>
+                            <td class="no">✗</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
                         </tr>
                         <tr>
-                            <td>سازگاری با NVR و XVR</td>
-                            <td class="cross">✗</td>
-                            <td class="check">✓</td>
-                            <td class="check">✓</td>
+                            <td>سازگاری با NVR/XVR</td>
+                            <td class="no">✗</td>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
                         </tr>
                         <tr>
                             <td>ضبط تصاویر</td>
-                            <td class="cross">✗</td>
-                            <td class="cross">✗</td>
-                            <td class="check">✓</td>
+                            <td class="no">✗</td>
+                            <td class="no">✗</td>
+                            <td class="yes">✓</td>
                         </tr>
                     </tbody>
                 </table>
@@ -287,35 +360,116 @@
         </div>
     </section>
 
+    <!-- Setup & Connection Section -->
+    <section class="setup">
+        <div class="container">
+            <div class="section-header">
+                <h2>نحوه اتصال و نصب</h2>
+            </div>
+            <div class="setup-grid">
+                <div class="setup-item">
+                    <div class="setup-icon">⚡</div>
+                    <h4>تغذیه</h4>
+                    <p>اتصال به برق ۲ آمپر</p>
+                </div>
+                <div class="setup-item">
+                    <div class="setup-icon">🌐</div>
+                    <h4>شبکه</h4>
+                    <p>کابل شبکه به سوئیچ یا مودم</p>
+                </div>
+                <div class="setup-item">
+                    <div class="setup-icon">💾</div>
+                    <h4>ضبط</h4>
+                    <p>اتصال به NVR/XVR برای ضبط تصاویر</p>
+                </div>
+                <div class="setup-item">
+                    <div class="setup-icon">🔔</div>
+                    <h4>حسگرها</h4>
+                    <p>اتصال حسگرها و آژیر (اختیاری)</p>
+                </div>
+            </div>
+            <div class="setup-note">
+                <p><strong>توجه:</strong> تجهیزات جانبی مانند حسگر چشمی و اسپیکر در صورت نیاز جداگانه تهیه می‌شوند.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2>کاربردها</h2>
+            </div>
+            <div class="cases-grid">
+                <div class="case-item">
+                    <span>🏠</span>
+                    <p>منازل</p>
+                </div>
+                <div class="case-item">
+                    <span>🏢</span>
+                    <p>دفاتر و ادارات</p>
+                </div>
+                <div class="case-item">
+                    <span>🏪</span>
+                    <p>فروشگاه‌ها</p>
+                </div>
+                <div class="case-item">
+                    <span>🏭</span>
+                    <p>کارگاه‌ها</p>
+                </div>
+                <div class="case-item">
+                    <span>📦</span>
+                    <p>انبارها</p>
+                </div>
+                <div class="case-item">
+                    <span>🔐</span>
+                    <p>فضاهای محدود</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Section -->
     <section id="faq" class="faq">
         <div class="container">
-            <h2>سوالات متداول</h2>
-            <div class="faq-items">
+            <div class="section-header">
+                <h2>سوالات متداول</h2>
+            </div>
+            <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>آیا برای مشاهده زنده نیاز به NVR است؟</span>
-                        <span class="icon">+</span>
+                        <span>آیا برای مشاهده تصویر به NVR نیاز است؟</span>
+                        <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>خیر. کمگارد امکان مشاهده زنده مستقیم را فراهم می‌کند. نیاز به NVR فقط برای ضبط طولانی‌مدت تصاویر است.</p>
+                        <p>برای مشاهده تصویر زنده، NVR الزامی نیست. برای ضبط و نگهداری تصاویر، NVR و هارد مورد نیاز است.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>برای ضبط تصاویر چه چیزی لازم است؟</span>
-                        <span class="icon">+</span>
+                        <span>آیا امکان تماس تلفنی وجود دارد؟</span>
+                        <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>برای ضبط تصاویر، به NVR یا XVR و هارد اضافی نیاز است. این ویژگی در مدل Camguard Pro Plus موجود است.</p>
+                        <p>بله، طبق قابلیت اعلام‌شده محصول، هنگام تشخیص انسان امکان اطلاع‌رسانی از طریق تماس وجود دارد.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>آیا می‌توانم حسگرهای اضافی اتصال دهم؟</span>
-                        <span class="icon">+</span>
+                        <span>آیا پیامک ارسال می‌شود؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>بله، امکان اطلاع‌رسانی از طریق پیامک هنگام تشخیص انسان وجود دارد.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>آیا می‌توانم حسگر اضافه کنم؟</span>
+                        <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
                         <p>در مدل‌های Camguard Pro و Pro Plus، می‌توانید حسگرهای سیمی و بی‌سیم اتصال دهید. حداکثر ۱۰ حسگر بی‌سیم پشتیبانی می‌شود.</p>
@@ -324,84 +478,113 @@
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>تجهیزات اضافی مثل حسگر چشمی چگونه کار می‌کند؟</span>
-                        <span class="icon">+</span>
+                        <span>آیا لوازم جانبی همراه محصول هستند؟</span>
+                        <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>برخی تجهیزات مثل حسگر چشمی و اسپیکر به‌صورت جداگانه تهیه می‌شوند و می‌توانند به سیستم متصل شوند.</p>
+                        <p>تجهیزات جانبی مانند حسگر چشمی و اسپیکر در صورت نیاز جداگانه تهیه می‌شوند.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>آیا سیستم قابل توسعه است؟</span>
-                        <span class="icon">+</span>
+                        <span>برای ضبط تصاویر چه تجهیزاتی لازم است؟</span>
+                        <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>بله. سیستم کمگارد می‌تواند با تجهیزات و حسگرهای اضافی توسعه داده شود.</p>
+                        <p>برای ضبط و نگهداری تصاویر، به NVR یا XVR و هارد مورد نیاز است. این ویژگی در مدل Camguard Pro Plus موجود است.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>تفاوت اصلی بین سه مدل چیست؟</span>
-                        <span class="icon">+</span>
+                        <span>تفاوت بین سه مدل چیست؟</span>
+                        <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Camguard مدل پایه‌ای است. Camguard Pro امکانات بیشتری مثل حسگرها و اتصال NVR دارد. Camguard Pro Plus علاوه‌بر همه موارد، ضبط تصاویر را پشتیبانی می‌کند.</p>
+                        <p>Camguard نسخه پایه‌ای با قابلیت‌های اساسی است. Camguard Pro امکانات بیشتری مثل حسگرها و اتصال NVR دارد. Camguard Pro Plus علاوه‌بر همه موارد، ضبط تصاویر را پشتیبانی می‌کند.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- CTA Section -->
+    <section class="cta">
         <div class="container">
-            <h2>تماس و درخواست اطلاعات</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>درباره محصولات کمگارد اطلاع بیشتری بخواهید</h3>
-                    <p>برای سوالات و درخواست اطلاعات، فرم زیر را پر کنید.</p>
-                </div>
-                <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event)">
-                    <input type="text" placeholder="نام شما" required>
-                    <input type="email" placeholder="ایمیل شما" required>
-                    <input type="tel" placeholder="شماره تماس" required>
-                    <select required>
-                        <option value="">محصول مورد نظر را انتخاب کنید</option>
-                        <option value="Camguard">Camguard</option>
-                        <option value="Camguard Pro">Camguard Pro</option>
-                        <option value="Camguard Pro Plus">Camguard Pro Plus</option>
-                        <option value="اطلاعات عمومی">اطلاعات عمومی</option>
-                    </select>
-                    <textarea placeholder="پیام شما" rows="5" required></textarea>
+            <h2>برای انتخاب مدل مناسب، درخواست خود را ارسال کنید</h2>
+            <p>مشخصات خود را وارد کنید تا درخواست شما برای بررسی ارسال شود.</p>
+            <button class="btn btn-primary" onclick="document.getElementById('contactSection').scrollIntoView({behavior: 'smooth'})">درخواست خرید</button>
+        </div>
+    </section>
+
+    <!-- Contact / Request Form Section -->
+    <section id="contact" class="contact">
+        <div id="contactSection" class="container">
+            <div class="section-header">
+                <h2>درخواست اطلاعات</h2>
+            </div>
+            <div class="form-wrapper">
+                <form id="requestForm" class="request-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" id="fullName" placeholder="نام و نام خانوادگی" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="شماره تماس" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="product" required>
+                            <option value="">انتخاب محصول</option>
+                            <option value="Camguard">Camguard</option>
+                            <option value="Camguard Pro">Camguard Pro</option>
+                            <option value="Camguard Pro Plus">Camguard Pro Plus</option>
+                            <option value="اطلاعات عمومی">اطلاعات عمومی</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="city" placeholder="شهر" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="توضیحات (اختیاری)" rows="4"></textarea>
+                    </div>
                     <button type="submit" class="btn btn-primary">ارسال درخواست</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Order Modal -->
-    <div id="orderModal" class="modal">
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeOrderForm()">&times;</span>
-            <h2>درخواست <span id="modalProductName"></span></h2>
-            <form class="order-form" onsubmit="handleOrderSubmit(event)">
-                <input type="text" placeholder="نام و نام‌خانوادگی" required>
-                <input type="email" placeholder="ایمیل" required>
-                <input type="tel" placeholder="شماره تماس" required>
-                <input type="text" placeholder="آدرس" required>
-                <textarea placeholder="توضیحات اضافی" rows="4"></textarea>
-                <button type="submit" class="btn btn-primary">ارسال درخواست</button>
-            </form>
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <h3>درخواست شما دریافت شد</h3>
+            <p>درخواست شما در نسخه آزمایشی ثبت شد.</p>
+            <p class="modal-note">این فرم در حال حاضر فقط برای نمایش رابط کاربری است و اطلاعات به سرور ارسال نمی‌شود.</p>
+            <button class="btn btn-primary" onclick="closeModal()">بستن</button>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; کمگارد - تمام حقوق محفوظ است.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CAMGUARD</h4>
+                    <p>راهکار تشخیص و اطلاع‌رسانی ورود</p>
+                </div>
+                <div class="footer-section">
+                    <h4>دسترسی سریع</h4>
+                    <ul>
+                        <li><a href="#home">خانه</a></li>
+                        <li><a href="#about">معرفی</a></li>
+                        <li><a href="#products">محصولات</a></li>
+                        <li><a href="#faq">سوالات متداول</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ۱۴۰۵ کمگارد. تمامی حقوق محفوظ است.</p>
+            </div>
         </div>
     </footer>
 
